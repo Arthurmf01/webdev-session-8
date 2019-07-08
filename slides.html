@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Pepe García">
+  <title>Continuous integration</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://revealjs.com/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="https://revealjs.com/css/theme/beige.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://revealjs.com/css/print/pdf.css' : 'https://revealjs.com/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://revealjs.com/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Continuous integration</h1>
+  <p class="author">Pepe García</p>
+</section>
+
+<section><section id="plan-for-today" class="title-slide slide level1"><h1>Plan for today</h1></section><section id="section" class="slide level2">
+<h2></h2>
+<ul>
+<li>Continuous integration</li>
+<li>anything else</li>
+</ul>
+</section></section>
+<section><section id="what" class="title-slide slide level1"><h1>What?</h1></section><section id="section-1" class="slide level2">
+<h2></h2>
+<p>Continuous integration is the process of merging all contributor’s code in order to avoid integration problems.</p>
+</section><section id="benefits" class="slide level2">
+<h2>Benefits</h2>
+<p>Continuous integration gives us some <strong>guarantees</strong> when accepting new code within our project.</p>
+</section></section>
+<section><section id="how" class="title-slide slide level1"><h1>How?</h1></section><section id="ci-services" class="slide level2">
+<h2>CI services</h2>
+<p>There are a lot different CI systems out there. Some of the most famous are:</p>
+<ul>
+<li>https://travis-ci.com</li>
+<li>https://jenkins.io</li>
+<li>https://circleci.com</li>
+</ul>
+</section><section id="how-1" class="slide level2">
+<h2>How?</h2>
+<p>What we normally do is make the CI system run tests whenever new code wants to be merged.</p>
+</section><section id="how-2" class="slide level2">
+<h2>How?</h2>
+<ul>
+<li>
+<span class="fragment fade-in">create tests for your project</span>
+</li>
+<li>
+<span class="fragment fade-in">add CI integration in Github</span>
+</li>
+<li>
+<span class="fragment fade-in">You’re done :)</span>
+</li>
+</ul>
+</section><section id="example" class="slide level2">
+<h2>Example</h2>
+<p>Let’s use <a href="https://github.com/mcsbt-2019-web-and-mobile/ci-example-1">https://github.com/mcsbt-2019-web-and-mobile/ci-example-1</a> as an example.</p>
+<p>You can see the travis-ci build in here: <a href="https://travis-ci.com/mcsbt-2019-web-and-mobile/ci-example-1">https://travis-ci.com/mcsbt-2019-web-and-mobile/ci-example-1</a></p>
+</section></section>
+<section id="exercise" class="title-slide slide level1"><h1>Exercise</h1><p>go to <a href="https://github.com/mcsbt-2019-web-and-mobile/ci-exercise-1">https://github.com/mcsbt-2019-web-and-mobile/ci-exercise-1</a>. Fork it and follow the instructions in the README :)</p></section>
+<section><section id="relation-with-continuous-deployment" class="title-slide slide level1"><h1>Relation with Continuous deployment</h1></section><section id="section-2" class="slide level2">
+<h2></h2>
+<p>Continuous deployment is a technique similar to continuous integration that consists on deploying code several times a day, normally after continuous integration passes.</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://revealjs.com/lib/js/head.min.js"></script>
+  <script src="https://revealjs.com/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://revealjs.com/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://revealjs.com/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
